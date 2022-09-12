@@ -11,15 +11,25 @@
         }
 
         .supporting {
+        overflow: scroll;
         position: absolute;
         top: 43%;
         border: solid;
+        left: 2%;
         }
  
         table, th, td {
             
         border: 1px solid;
         }
+
+        .image{
+        width: 45%;
+        margin-left: 74px;
+        padding-block: 8px
+        }
+        ;
+
     </style>
     </head>
 
@@ -43,7 +53,7 @@
     <%= @projects.each do |project| %>
         <tr>
           <td> <%= project.item%>  </td>
-          <td> <img src="<%= project.cover %>"> </td>
+          <td> <img class="image" src="<%= project.cover %>"> </td>
           <td> <%= project.title%>  </td>
           <td> <%= project.description%></td>
           <td> <a href="<%= project.link%>">Project Link</a></td>
