@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+    <style>
+        .mywork {
+        position: fixed;
+        top: 30%;
+        left: 1%;
+        width: 100%;
+        border: 3px solid #73AD21;
+        }
+
+        .supporting {
+        position: absolute;
+        top: 43%;
+        border: solid;
+        }
+ 
+        table, th, td {
+            
+        border: 1px solid;
+        }
+    </style>
+    </head>
+
+    <body>
+    <h1 class="main">Main Section</h1>
+    <div class="mywork">
+        <h1> View My Projects</h1>
+    </div>
+    
+
+
+    <table class="supporting">
+    <tr>
+      <th>Item</th>
+      <th>Cover</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Link</th>
+    </tr>
+    
+    <%= @projects.each do |project| %>
+        <tr>
+          <td> <%= project.item%>  </td>
+          <td> <img src="<%= project.cover %>"> </td>
+          <td> <%= project.title%>  </td>
+          <td> <%= project.description%></td>
+          <td> <a href="<%= project.link%>">Project Link</a></td>
+        <tr>
+        <% end %>
+    <tr>
+  </table>
+
+
+    </body>
+    </html>

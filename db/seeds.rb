@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Project.create(item: "Ruby on Rails", cover: "portfolio/app/assets/images/portfolio.png", title: "Personal Portfolio", description: "Completed Ruby on Rails Course on Codecademy", link: "https://github.com/harshada0489/RubyOnRails")
+Project.create(item: "Microblog Twitter", cover: "portfolio/app/assets/images/Microblog.png", title: "Twitter small version", description: "Project under Web Backend course in University", link: "https://github.com/harshada0489/microblog-twitter")
+Project.create(item: "Concentration Game", cover: "portfolio/app/assets/images/ConcentrationGame.png", title: "Card Game ", description: "Build using React", link: "https://heroku-concentration-app.herokuapp.com/")
+Project.create(item: "Research Administration System", cover: "portfolio/app/assets/images/RAS.png", title: "Research Administration System", description: "Build using React, MongoDB, JAVA- SpringBoot", link: "https://github.com/harshada0489/ResearchAdminSystem")
+Project.create(item: "Corona Spread", cover: "portfolio/app/assets/images/CoronaCases.png", title: "Analyzation And Prediction Of Spread Of Corona", description: "Built in Python, Machine Learning, Google Colaboratory", link: "https://github.com/harshada0489/Analyzation-And-Prediction-Of-Spread-Of-Corona")
